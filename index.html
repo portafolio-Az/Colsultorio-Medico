@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Consultorio médico privado del Dr. Carlos Méndez - Atención personalizada, tecnología de vanguardia y excelencia clínica en español.">
+    <title>Dr. Carlos Méndez | Medicina de Excelencia</title>
+    <!-- Google Fonts + Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER STICKY -->
+<header class="header" id="header">
+    <div class="container header-container">
+        <div class="logo">
+            <a href="#inicio">Dr. Carlos Méndez <span>Medicina Interna</span></a>
+        </div>
+        <nav class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#beneficios" class="nav-link">Ventajas</a></li>
+                <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <!-- Teléfono dentro del menú móvil (visible solo en móvil) -->
+                <li class="mobile-phone-item">
+                    <a href="tel:+525512345678" class="phone-link-mobile">
+                        <i class="fas fa-phone-alt"></i> (55) 1234 5678
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="tel:+525512345678" class="phone-link desktop-only"><i class="fas fa-phone-alt"></i> <span class="phone-number">(55) 1234 5678</span></a>
+           
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- HERO CAROUSEL (4 slides) -->
+    <section id="inicio" class="hero-carousel-section">
+        <div class="carousel-container" id="heroCarousel">
+            <div class="carousel-wrapper" id="carouselWrapper">
+                <!-- Slide 1 -->
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Médico atendiendo paciente" loading="lazy">
+                    <div class="overlay-blue"></div>
+                    <div class="slide-content">
+                        <h1>Excelencia en el cuidado de tu salud</h1>
+                        <p>Diagnósticos precisos, tratamientos personalizados y calidez humana.</p>
+                        <a href="#contacto" class="btn btn-primary">Agendar cita <i class="fas fa-calendar-alt"></i></a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Equipo médico moderno">
+                    <div class="overlay-blue"></div>
+                    <div class="slide-content">
+                        <h1>Tecnología de vanguardia</h1>
+                        <p>Equipamiento de última generación para un diagnóstico certero.</p>
+                        <a href="#contacto" class="btn btn-primary">Agendar cita <i class="fas fa-calendar-alt"></i></a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <img src="https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Consulta médica privada">
+                    <div class="overlay-blue"></div>
+                    <div class="slide-content">
+                        <h1>Atención integral y personalizada</h1>
+                        <p>Te escuchamos y diseñamos el mejor plan para tu bienestar.</p>
+                        <a href="#contacto" class="btn btn-primary">Agendar cita <i class="fas fa-calendar-alt"></i></a>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-slide">
+                    <img src="https://plus.unsplash.com/premium_photo-1681996543579-b24cd01d4516?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ambiente acogedor y confiable">
+                    <div class="overlay-blue"></div>
+                    <div class="slide-content">
+                        <h1>Confianza y trayectoria médica</h1>
+                        <p>Más de 15 años brindando salud con calidez y excelencia.</p>
+                        <a href="#contacto" class="btn btn-primary">Agendar cita <i class="fas fa-calendar-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- SOBRE EL DOCTOR -->
+    <section id="sobre-mi" class="section about-section">
+        <div class="container reveal">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dr. Carlos Méndez - médico especialista">
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">Especialista en Medicina Interna</span>
+                    <h2>Dr. Carlos Méndez <span>Médico Cirujano</span></h2>
+                    <p>Con más de 15 años de experiencia en instituciones de prestigio nacional e internacional, el Dr. Méndez combina ciencia y calidez humana. Egresado con honores de la Universidad Nacional Autónoma de México, realizó su subespecialidad en Cardiología Clínica en el Hospital Clínic de Barcelona.</p>
+                    <p>Miembro activo de la Asociación Mexicana de Medicina Interna y certificado por el Consejo Mexicano de Medicina Interna. Su filosofía se basa en la medicina preventiva y el trato empático hacia cada paciente.</p>
+                    <div class="certifications">
+                        <i class="fas fa-certificate"></i> Certificación CMIM <span>|</span>
+                        <i class="fas fa-stethoscope"></i> Alta especialidad en Cardiología <span>|</span>
+                        <i class="fas fa-microscope"></i> Investigación clínica
+                    </div>
+                    <a href="#contacto" class="btn btn-secondary">Solicita una consulta</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS MÉDICOS - Cards con imagen, icono y puntos clave (ahora 6 servicios) -->
+    <section id="servicios" class="section services-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Servicios médicos</h2>
+                <p>Atención integral con tecnología y calidez</p>
+            </div>
+            <div class="services-grid">
+                <!-- Servicio 1 -->
+                <div class="service-card reveal">
+                    <div class="card-icon"><i class="fas fa-heartbeat"></i></div>
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Consulta especializada" class="service-img">
+                    <h3>Consulta especializada</h3>
+                    <p>Evaluación clínica completa, diagnóstico certero y plan de tratamiento personalizado.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Historia clínica detallada</li>
+                        <li><i class="fas fa-check-circle"></i> Exploración física integral</li>
+                        <li><i class="fas fa-check-circle"></i> Prescripción electrónica</li>
+                    </ul>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="service-card reveal">
+                    <div class="card-icon"><i class="fas fa-stethoscope"></i></div>
+                    <img src="https://images.unsplash.com/photo-1504813184591-01572f98c85f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Medicina preventiva" class="service-img">
+                    <h3>Medicina preventiva</h3>
+                    <p>Chequeos anuales, detección temprana de enfermedades y promoción de hábitos saludables.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Checkups personalizados</li>
+                        <li><i class="fas fa-check-circle"></i> Vacunación programada</li>
+                        <li><i class="fas fa-check-circle"></i> Asesoría nutricional</li>
+                    </ul>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="service-card reveal">
+                    <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                    <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Gestión de enfermedades crónicas" class="service-img">
+                    <h3>Gestión de enfermedades crónicas</h3>
+                    <p>Hipertensión, diabetes, colesterol: seguimiento continuo para mejorar tu calidad de vida.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Monitoreo continuo</li>
+                        <li><i class="fas fa-check-circle"></i> Ajuste de medicación</li>
+                        <li><i class="fas fa-check-circle"></i> Educación al paciente</li>
+                    </ul>
+                </div>
+                <!-- Servicio 4 -->
+                <div class="service-card reveal">
+                    <div class="card-icon"><i class="fas fa-laptop-medical"></i></div>
+                    <img src="https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Telemedicina" class="service-img">
+                    <h3>Telemedicina</h3>
+                    <p>Consultas a distancia seguras, seguimiento ágil y prescripción electrónica.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Videoconsulta en tiempo real</li>
+                        <li><i class="fas fa-check-circle"></i> Recetas digitales</li>
+                        <li><i class="fas fa-check-circle"></i> Seguimiento post-consulta</li>
+                    </ul>
+                </div>
+                <!-- NUEVO Servicio 5: Nutrición Clínica -->
+                <div class="service-card reveal">
+                    <div class="card-icon"><i class="fas fa-apple-alt"></i></div>
+                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Nutrición clínica" class="service-img">
+                    <h3>Nutrición clínica</h3>
+                    <p>Planes alimenticios personalizados para tratar patologías y mejorar tu salud metabólica.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Evaluación del estado nutricional</li>
+                        <li><i class="fas fa-check-circle"></i> Planes para diabetes, hipertensión, etc.</li>
+                        <li><i class="fas fa-check-circle"></i> Suplementación supervisada</li>
+                    </ul>
+                </div>
+                <!-- NUEVO Servicio 6: Psicología y Bienestar -->
+                <div class="service-card reveal">
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Psicología y bienestar" class="service-img">
+                    <h3>Psicología y Bienestar</h3>
+                    <p>Acompañamiento emocional y terapia cognitivo-conductual para el equilibrio mental.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Manejo de ansiedad y estrés</li>
+                        <li><i class="fas fa-check-circle"></i> Terapia breve focalizada</li>
+                        <li><i class="fas fa-check-circle"></i> Apoyo en enfermedades crónicas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POR QUÉ ELEGIRNOS / BENEFICIOS -->
+    <section id="beneficios" class="section benefits-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>¿Por qué elegirnos?</h2>
+                <p>Excelencia médica que marca la diferencia</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item reveal"><i class="fas fa-user-md"></i><h3>Experiencia contrastada</h3><p>+15 años de trayectoria y más de 8,000 pacientes atendidos.</p></div>
+                <div class="benefit-item reveal"><i class="fas fa-clock"></i><h3>Puntualidad y respeto</h3><p>Tu tiempo es valioso, consultas sin largas esperas.</p></div>
+                <div class="benefit-item reveal"><i class="fas fa-hand-holding-heart"></i><h3>Trato humano</h3><p>Escucha activa, empatía y confidencialidad absoluta.</p></div>
+                <div class="benefit-item reveal"><i class="fas fa-microscope"></i><h3>Tecnología de punta</h3><p>Equipos de diagnóstico avanzado y laboratorio in situ.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: TECNOLOGÍA DE VANGUARDIA -->
+    <section id="tecnologia" class="section tech-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Tecnología de vanguardia</h2>
+                <p>Equipamiento médico de última generación para diagnósticos precisos</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card reveal">
+                    <i class="fas fa-microscope"></i>
+                    <h3>Laboratorio propio</h3>
+                    <p>Resultados en menos de 24 horas con equipos automatizados de alta precisión.</p>
+                </div>
+                <div class="tech-card reveal">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Electrocardiograma digital</h3>
+                    <p>Interpretación inmediata con reporte estructurado y almacenamiento en la nube.</p>
+                </div>
+                <div class="tech-card reveal">
+                    <i class="fas fa-x-ray"></i>
+                    <h3>Ecografía portátil</h3>
+                    <p>Estudios en consultorio sin necesidad de traslados, con imágenes de alta definición.</p>
+                </div>
+                <div class="tech-card reveal">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Expediente clínico electrónico</h3>
+                    <p>Historial accesible, seguro y disponible en cualquier momento para seguimiento integral.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" class="section testimonials-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Testimonios de pacientes</h2>
+                <p>Historias reales que reflejan nuestro compromiso</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>El Dr. Méndez me ha cambiado la vida. Su diagnóstico fue preciso y su seguimiento, excepcional. Me siento en las mejores manos.</p>
+                    <div class="patient-info"><strong>Laura G.</strong> <span>Paciente hipertensión</span></div>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>Excelente profesional, muy humano y resuelve todas mis dudas. Su equipo es muy atento y las instalaciones son de primer nivel.</p>
+                    <div class="patient-info"><strong>Ricardo M.</strong> <span>Control anual</span></div>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>Gracias a su atención logré estabilizar mi diabetes. Un médico que realmente escucha y se preocupa por el bienestar integral.</p>
+                    <div class="patient-info"><strong>Martha R.</strong> <span>Medicina preventiva</span></div>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA DE CLÍNICA - CARRUSEL INFINITO (sin sombra ni bordes redondeados) -->
+    <section id="galeria" class="section gallery-carousel-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Nuestra clínica</h2>
+                <p>Espacios diseñados para tu comodidad y bienestar</p>
+            </div>
+            <div class="gallery-carousel-container no-round no-shadow">
+                <div class="gallery-carousel-wrapper" id="galleryCarouselWrapper">
+                    <!-- Las imágenes se generan con JS -->
+                </div>
+                <button class="gallery-prev" id="galleryPrev"><i class="fas fa-chevron-left"></i></button>
+                <button class="gallery-next" id="galleryNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES (FAQ) - Accordion cerrado por defecto -->
+    <section id="faq" class="section faq-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Preguntas frecuentes</h2>
+                <p>Resolvemos tus dudas más comunes</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h3>¿Cómo agendo una cita?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Puedes llamarnos al número que aparece en el menú, usar el formulario de contacto o enviarnos un mensaje por WhatsApp. Te confirmaremos la disponibilidad en menos de 1 hora.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h3>¿Aceptan mi seguro de gastos médicos?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Trabajamos con la mayoría de las aseguradoras privadas. Contáctanos con tu póliza y te daremos toda la información.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h3>¿Cuánto dura una consulta?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Las consultas tienen una duración aproximada de 40 a 60 minutos, garantizando tiempo para escucharte y realizar una exploración detallada.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h3>¿Ofrecen servicios de telemedicina?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, contamos con consultas virtuales seguras a través de videollamada. Ideal para seguimientos o pacientes que no pueden acudir presencialmente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO / AGENDAR CITA -->
+    <section id="contacto" class="section contact-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Agenda tu cita</h2>
+                <p>Comunícate con nosotros o completa el formulario</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-form reveal">
+                    <form id="appointmentForm">
+                        <div class="form-group"><input type="text" placeholder="Nombre completo" id="nombre" required></div>
+                        <div class="form-group"><input type="email" placeholder="Correo electrónico" id="email" required></div>
+                        <div class="form-group"><input type="tel" placeholder="Teléfono" id="telefono" required></div>
+                        <div class="form-group"><textarea rows="4" placeholder="Mensaje o motivo de consulta" id="mensaje"></textarea></div>
+                        <button type="submit" class="btn btn-primary full-width">Solicitar cita <i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+                <div class="contact-info reveal">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Av. Paseo de la Reforma 456, Torre Médica, CDMX, México</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+52 (55) 1234 5678</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <p>contacto@drcarlosmendez.mx</p>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://maps.google.com/maps?q=Av.%20Paseo%20de%20la%20Reforma%20456%2C%20CDMX&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-overlay"></div>
+    <div class="container footer-container">
+        <div class="footer-grid">
+            <!-- Columna 1: Información del doctor -->
+            <div class="footer-col">
+                <h3>Dr. Carlos Méndez</h3>
+                <p>Medicina interna de excelencia, dedicada a tu bienestar integral. Atención personalizada y tecnología avanzada.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Enlaces rápidos -->
+            <div class="footer-col">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#beneficios">Ventajas</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Horario y contacto -->
+            <div class="footer-col">
+                <h4>Horario de atención</h4>
+                <p>Lunes a Viernes: 9:00 - 19:00</p>
+                <p>Sábados: 9:00 - 14:00</p>
+                <p>Emergencias: +52 55 9876 5432</p>
+            </div>
+
+            <!-- NUEVA COLUMNA: Foto del consultorio + CTA -->
+            <div class="footer-col footer-col-image">
+                <div class="footer-image">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Consultorio moderno">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dr. Carlos Méndez - Medicina de excelencia. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/525512345678?text=Hola%20Doctor%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita" class="float-whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+<button id="backToTop" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
